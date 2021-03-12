@@ -3,13 +3,44 @@ services:
   nginx:
     build: ./docker/nginx
     volumes:
-      - ./src:/var/www/html
+      - ./src/home:/var/www/html
     ports:
       - '8006:80'
     depends_on:
       - php
+      - nginxtaikhoan
+      - nginxforum
   php:
-    #image: php:7.3.6-fpm-alpine3.9
     image: itdevgroup/php-fpm7.4
     volumes:
       - ./src:/var/www/html
+  nginxtaikhoan:
+    build: ./docker/nginx2
+    volumes:
+      - ./src/taikhoan:/var/www/html
+    depends_on:
+      - phptaikhoan
+  phptaikhoan:
+    image: itdevgroup/php-fpm7.4
+    volumes:
+      - ./src/taikhoan:/var/www/html
+  nginxforum:
+    build: ./docker/nginx2
+    volumes:
+      - ./src/forum:/var/www/html
+    depends_on:
+      - phpforum
+  phpforum:
+    image: itdevgroup/php-fpm7.4
+    volumes:
+      - ./src/forum:/var/www/html
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./dbdata:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress

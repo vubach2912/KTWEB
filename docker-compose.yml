@@ -14,6 +14,16 @@ services:
     image: itdevgroup/php-fpm7.4
     volumes:
       - ./src/home:/var/www/html
+  db:
+    image: mysql:5.7
+    volumes:
+      - ./dbdata:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
   nginxtaikhoan:
     build: ./docker/nginx2
     volumes:
@@ -25,7 +35,7 @@ services:
     volumes:
       - ./src/taikhoan:/var/www/html
   nginxforum:
-    build: ./docker/nginx2
+    build: ./docker/nginx3
     volumes:
       - ./src/forum:/var/www/html
     depends_on:
@@ -34,7 +44,7 @@ services:
     image: itdevgroup/php-fpm7.4
     volumes:
       - ./src/forum:/var/www/html
-  db:
+  dbforum:
     image: mysql:5.7
     volumes:
       - ./dbdata:/var/lib/mysql
@@ -44,3 +54,4 @@ services:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
       MYSQL_PASSWORD: wordpress
+

@@ -47,7 +47,7 @@ services:
   dbforum:
     image: mysql:5.7
     volumes:
-      - ./dbdata:/var/lib/mysql
+      - ./dbdata2:/var/lib/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: somewordpress

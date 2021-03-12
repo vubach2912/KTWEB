@@ -1,0 +1,20 @@
+.login-logo a img {
+    width: 360px;
+}
+
+.login-page, .register-page {
+    background: #fff;
+}
+
+.login-box-body, .register-box-body {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgb(0 0 0 / 15%), 0 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.login-box button.btn.btn-primary.btn-block.btn-flat {
+    border-radius: 5px;
+    width: 100px;
+    background: #2CA8FF;
+    border-color: #2CA8FF;
+}

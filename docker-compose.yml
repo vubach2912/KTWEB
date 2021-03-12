@@ -13,7 +13,7 @@ services:
   php:
     image: itdevgroup/php-fpm7.4
     volumes:
-      - ./src:/var/www/html
+      - ./src/home:/var/www/html
   nginxtaikhoan:
     build: ./docker/nginx2
     volumes:

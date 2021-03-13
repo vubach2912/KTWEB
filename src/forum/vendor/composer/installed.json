@@ -221,6 +221,69 @@
         "description": "Font Awesome, the iconic SVG, font, and CSS framework."
     },
     {
+        "name": "datlechin/lang-vietnamese",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/datlechin/lang-vietnamese.git",
+            "reference": "60063e841440f4a5c1ee463d73c62633e78370fe"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/datlechin/lang-vietnamese/zipball/60063e841440f4a5c1ee463d73c62633e78370fe",
+            "reference": "60063e841440f4a5c1ee463d73c62633e78370fe",
+            "shasum": ""
+        },
+        "require": {
+            "flarum/core": "^0.1.0-beta.14"
+        },
+        "time": "2020-12-07T10:26:16+00:00",
+        "type": "flarum-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.1.x-dev"
+            },
+            "flarum-extension": {
+                "title": "Vietnamese",
+                "icon": {
+                    "image": "icon.svg",
+                    "backgroundColor": "#00247d",
+                    "backgroundSize": "cover",
+                    "backgroundPosition": "center"
+                }
+            },
+            "flarum-locale": {
+                "code": "vi",
+                "title": "Vietnamese"
+            },
+            "flagrow": {
+                "discuss": "https://discuss.flarum.org/d/22902-vietnamese-extention-for-flarum"
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ngo Quoc Dat (datlechin)",
+                "email": "datlechin@gmail.com",
+                "homepage": "https://vieit.net"
+            }
+        ],
+        "description": "Vietnamese language pack (datlechin)",
+        "keywords": [
+            "Tiếng Việt",
+            "extention",
+            "flarum",
+            "locale",
+            "translation",
+            "vietnamese"
+        ]
+    },
+    {
         "name": "dflydev/fig-cookies",
         "version": "v2.0.3",
         "version_normalized": "2.0.3.0",

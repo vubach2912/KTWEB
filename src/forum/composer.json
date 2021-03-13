@@ -61,7 +61,7 @@
         "flarum/subscriptions": "^0.1.0-beta.15",
         "flarum/suspend": "^0.1.0-beta.15",
         "flarum/tags": "^0.1.0-beta.15",
-        "franga2000/flarum-markdown-wysiwyg": "^0.1.0@dev"
+        "xengine/flarum-ext-markdown-editor": "dev-master"
     },
     "config": {
         "preferred-install": "dist",
@@ -69,9 +69,5 @@
     },
     "minimum-stability": "dev",
     "repositories": {
-        "markdown-wysiwyg": {
-            "type": "path",
-            "url": "flarum-markdown-wysiwyg"
-        }
     }
 }

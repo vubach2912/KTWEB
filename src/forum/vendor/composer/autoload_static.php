@@ -64,6 +64,10 @@ class ComposerStaticInit1da1db1b2ba71fb0ef1107db90567af0
             'axy\\codecs\\base64vlq\\' => 21,
             'axy\\backtrace\\' => 14,
         ),
+        'X' => 
+        array (
+            'XEngine\\MarkdownEditor\\' => 23,
+        ),
         'W' => 
         array (
             'Whoops\\' => 7,
@@ -222,6 +226,10 @@ class ComposerStaticInit1da1db1b2ba71fb0ef1107db90567af0
         'axy\\backtrace\\' => 
         array (
             0 => __DIR__ . '/..' . '/axy/backtrace',
+        ),
+        'XEngine\\MarkdownEditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/xengine/flarum-ext-markdown-editor/src',
         ),
         'Whoops\\' => 
         array (

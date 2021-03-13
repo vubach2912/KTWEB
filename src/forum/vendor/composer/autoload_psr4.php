@@ -13,6 +13,7 @@ return array(
     'axy\\errors\\' => array($vendorDir . '/axy/errors'),
     'axy\\codecs\\base64vlq\\' => array($vendorDir . '/axy/codecs-base64vlq'),
     'axy\\backtrace\\' => array($vendorDir . '/axy/backtrace'),
+    'XEngine\\MarkdownEditor\\' => array($vendorDir . '/xengine/flarum-ext-markdown-editor/src'),
     'Whoops\\' => array($vendorDir . '/filp/whoops/src/Whoops'),
     'Tobscure\\JsonApi\\' => array($vendorDir . '/tobscure/json-api/src'),
     'TijsVerkoyen\\CssToInlineStyles\\' => array($vendorDir . '/tijsverkoyen/css-to-inline-styles/src'),

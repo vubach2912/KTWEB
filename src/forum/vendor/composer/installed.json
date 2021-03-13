@@ -7035,5 +7035,51 @@
             "php",
             "stylesheet"
         ]
+    },
+    {
+        "name": "xengine/flarum-ext-markdown-editor",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Extum/editor.git",
+            "reference": "b80edd9c6cfceb21b14a15103e3b6cc0287721e7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Extum/editor/zipball/b80edd9c6cfceb21b14a15103e3b6cc0287721e7",
+            "reference": "b80edd9c6cfceb21b14a15103e3b6cc0287721e7",
+            "shasum": ""
+        },
+        "require": {
+            "flarum/core": "^0.1.0-beta.7"
+        },
+        "time": "2018-08-14T14:06:24+00:00",
+        "type": "flarum-extension",
+        "extra": {
+            "flarum-extension": {
+                "title": "Markdown Editor",
+                "icon": {
+                    "name": "pencil",
+                    "backgroundColor": "#2e3436",
+                    "color": "#eeeeec"
+                }
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "XEngine\\MarkdownEditor\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Extum",
+                "email": "ardacebi1@gmail.com"
+            }
+        ],
+        "description": "Simple Markdown Editor for Flarum.",
+        "abandoned": "extum/flarum-ext-markdown-editor"
     }
 ]

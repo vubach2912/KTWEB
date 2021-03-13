@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aac9b2e9ffd51822244bcfcf63e4c3cd",
+    "content-hash": "c156549169dc4ce959ba57aba6454ee4",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -1976,6 +1976,46 @@
                 }
             ],
             "time": "2020-12-18T00:51:53+00:00"
+        },
+        {
+            "name": "franga2000/flarum-markdown-wysiwyg",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "flarum-markdown-wysiwyg",
+                "reference": "dd5ffe8e65030e168a09b25cef3219ec49fbd552"
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.14"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                },
+                "flarum-extension": {
+                    "title": "Markdown CKEditor",
+                    "icon": {
+                        "image": "icon.svg",
+                        "backgroundColor": "#000",
+                        "backgroundSize": "100%",
+                        "backgroundRepeat": "no-repeat",
+                        "backgroundPosition": "center",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "description": "A true WYSIWYG editor that outputs Markdown",
+            "keywords": [
+                "formatting"
+            ],
+            "support": {
+                "issues": "https://github.com/franga2000/flarum-markdown-wysiwyg/issues",
+                "source": "https://github.com/franga2000/flarum-markdown-wysiwyg"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "franzl/whoops-middleware",
@@ -6782,9 +6822,11 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "beta",
-    "stability-flags": [],
-    "prefer-stable": true,
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "franga2000/flarum-markdown-wysiwyg": 20
+    },
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],

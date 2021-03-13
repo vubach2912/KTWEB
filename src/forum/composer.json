@@ -44,28 +44,34 @@
     },
     "require": {
         "datlechin/lang-vietnamese": "^1.0",
-        "flarum/approval": "^0.1.0",
-        "flarum/bbcode": "^0.1.0",
-        "flarum/core": "^0.1.0",
-        "flarum/emoji": "^0.1.0",
-        "flarum/flags": "^0.1.0",
-        "flarum/lang-english": "^0.1.0",
-        "flarum/likes": "^0.1.0",
-        "flarum/lock": "^0.1.0",
-        "flarum/markdown": "^0.1.0",
-        "flarum/mentions": "^0.1.0",
-        "flarum/nicknames": "^0.1.0",
-        "flarum/pusher": "^0.1.0",
-        "flarum/statistics": "^0.1.0",
-        "flarum/sticky": "^0.1.0",
-        "flarum/subscriptions": "^0.1.0",
-        "flarum/suspend": "^0.1.0",
-        "flarum/tags": "^0.1.0"
+        "flarum/approval": "^0.1.0-beta.15",
+        "flarum/bbcode": "^0.1.0-beta.15",
+        "flarum/core": "^0.1.0-beta.15",
+        "flarum/emoji": "^0.1.0-beta.15",
+        "flarum/flags": "^0.1.0-beta.15",
+        "flarum/lang-english": "^0.1.0-beta.15",
+        "flarum/likes": "^0.1.0-beta.15",
+        "flarum/lock": "^0.1.0-beta.15",
+        "flarum/markdown": "^0.1.0-beta.15",
+        "flarum/mentions": "^0.1.0-beta.15",
+        "flarum/nicknames": "^0.1.0-beta.15",
+        "flarum/pusher": "^0.1.0-beta.15",
+        "flarum/statistics": "^0.1.0-beta.15",
+        "flarum/sticky": "^0.1.0-beta.15",
+        "flarum/subscriptions": "^0.1.0-beta.15",
+        "flarum/suspend": "^0.1.0-beta.15",
+        "flarum/tags": "^0.1.0-beta.15",
+        "franga2000/flarum-markdown-wysiwyg": "^0.1.0@dev"
     },
     "config": {
         "preferred-install": "dist",
         "sort-packages": true
     },
-    "minimum-stability": "beta",
-    "prefer-stable": true
+    "minimum-stability": "dev",
+    "repositories": {
+        "markdown-wysiwyg": {
+            "type": "path",
+            "url": "flarum-markdown-wysiwyg"
+        }
+    }
 }

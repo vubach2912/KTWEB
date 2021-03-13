@@ -2035,6 +2035,48 @@
         ]
     },
     {
+        "name": "franga2000/flarum-markdown-wysiwyg",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "path",
+            "url": "flarum-markdown-wysiwyg",
+            "reference": "dd5ffe8e65030e168a09b25cef3219ec49fbd552"
+        },
+        "require": {
+            "flarum/core": "^0.1.0-beta.14"
+        },
+        "type": "flarum-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.1.x-dev"
+            },
+            "flarum-extension": {
+                "title": "Markdown CKEditor",
+                "icon": {
+                    "image": "icon.svg",
+                    "backgroundColor": "#000",
+                    "backgroundSize": "100%",
+                    "backgroundRepeat": "no-repeat",
+                    "backgroundPosition": "center",
+                    "color": "#fff"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "description": "A true WYSIWYG editor that outputs Markdown",
+        "keywords": [
+            "formatting"
+        ],
+        "support": {
+            "issues": "https://github.com/franga2000/flarum-markdown-wysiwyg/issues",
+            "source": "https://github.com/franga2000/flarum-markdown-wysiwyg"
+        },
+        "transport-options": {
+            "relative": true
+        }
+    },
+    {
         "name": "franzl/whoops-middleware",
         "version": "0.4.1",
         "version_normalized": "0.4.1.0",

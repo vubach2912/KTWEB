@@ -1,0 +1,29 @@
+{
+    "name": "franga2000/flarum-markdown-wysiwyg",
+    "description": "A true WYSIWYG editor that outputs Markdown",
+    "type": "flarum-extension",
+    "keywords": ["formatting"],
+    "support": {
+        "issues": "https://github.com/franga2000/flarum-markdown-wysiwyg/issues",
+        "source": "https://github.com/franga2000/flarum-markdown-wysiwyg"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.14"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "flarum-extension": {
+            "title": "Markdown CKEditor",
+            "icon": {
+                "image": "icon.svg",
+                "backgroundColor": "#000",
+                "backgroundSize": "100%",
+                "backgroundRepeat": "no-repeat",
+                "backgroundPosition": "center",
+                "color": "#fff"
+            }
+        }
+    }
+}

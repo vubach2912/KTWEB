@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b881a205a835d8efdfae539bba6d3d1",
+    "content-hash": "c156549169dc4ce959ba57aba6454ee4",
     "packages": [
         {
             "name": "axy/backtrace",
@@ -6868,7 +6868,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "xengine/flarum-ext-markdown-editor": 20
+        "franga2000/flarum-markdown-wysiwyg": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

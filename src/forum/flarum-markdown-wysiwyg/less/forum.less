@@ -1,0 +1,97 @@
+.Composer {
+	.ck-editor__main {
+		// The parent element is getting stretched by something in flarum/core, we just need to make sure to adjust to it
+		height: calc(~"100%" - 40px);
+		.ck-editor__editable {
+			height: 100%;
+		}
+	}
+
+	.Composer-footer {
+		border-top: none;
+	}
+}
+
+// Since CKEditor injects its own CSS after ours, we need to set these at a higher specificity in order to override them
+.ck {
+	// Composer is at z-index 1020, so we need to raise popups above it
+	--ck-z-modal: 2000;
+
+
+	/*
+	CKEditor theme override
+
+	The following horrible mess attempts to map Flarum's Less variables onto CKEditor's CSS variable.
+	Given the extensive use of mixins in Flarum, one can imagine how this can hardly en well...
+	*/
+	// TODO: Remove unnecessary overrides
+	--ck-color-text:  @text-color;
+	--ck-color-base-text: @text-color;
+	--ck-color-base-background: @body-bg;
+	--ck-color-base-border: @control-bg;
+	--ck-color-base-error: @error-color;
+
+	--ck-color-toolbar-background: @control-bg;
+	--ck-color-toolbar-border: @control-bg;
+
+	--ck-color-panel-background: @control-bg;
+
+	--ck-color-focus-outer-shadow: @control-bg;
+	--ck-focus-outer-shadow: var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-outer-shadow);
+	--ck-focus-disabled-outer-shadow: var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-disabled-shadow);
+	--ck-focus-error-outer-shadow: var(--ck-focus-outer-shadow-geometry) var(--ck-color-focus-error-shadow);
+
+	--ck-color-button-default-background: @control-bg;
+	--ck-color-button-default-hover-background: darken(fadein(@control-bg, 5%), 5%);
+	--ck-color-button-default-active-background: darken(fadein(@control-bg, 5%), 5%);
+	--ck-color-button-default-active-shadow: hsl(@secondary-hue, min(20%, @secondary-sat), 13%);
+	--ck-color-button-default-disabled-background: transparent;
+
+	--ck-color-button-on-background: @primary-color;
+	--ck-color-button-on-hover-background: darken(fadein(@primary-color, 5%), 5%);
+	--ck-color-button-on-active-background: darken(fadein(@primary-color, 5%), 5%);
+	--ck-color-button-on-active-shadow: @shadow-color;
+	--ck-color-button-on-disabled-background: @control-bg;
+
+	--ck-color-button-action-background: @control-bg;
+	--ck-color-button-action-hover-background: darken(fadein(@control-bg, 5%), 5%);
+	--ck-color-button-action-active-background: darken(fadein(@control-bg, 5%), 5%);
+	--ck-color-button-action-active-shadow: @control-bg;
+	--ck-color-button-action-disabled-background: @control-bg;
+	--ck-color-button-action-text: var(--ck-color-base-background);
+
+	--ck-color-switch-button-off-background: @body-bg;
+	--ck-color-switch-button-off-hover-background: darken(fadein(@body-bg, 5%), 5%);
+	--ck-color-switch-button-on-background: @control-bg;
+	--ck-color-switch-button-on-hover-background: darken(fadein(@control-bg, 5%), 5%);
+	--ck-color-switch-button-inner-background: var(--ck-color-base-background);
+	--ck-color-switch-button-inner-shadow: @shadow-color;
+
+	--ck-color-input-background: var(--ck-color-base-background);
+	--ck-color-input-border: @control-bg;
+	--ck-color-input-error-border: var(--ck-color-base-error);
+	--ck-color-input-text: var(--ck-color-base-text);
+	--ck-color-input-disabled-background:@control-bg;
+	--ck-color-input-disabled-border: @control-bg;
+	--ck-color-input-disabled-text: @muted-color;
+
+	--ck-color-split-button-hover-background:var(--ck-color-button-default-background);
+	--ck-color-split-button-hover-border: var(--ck-color-button-default-background);
+
+	--ck-color-link-default: @link-color;
+	--ck-color-link-selected-background: hsla(201, 100%, 56%, 0.1);
+	--ck-color-link-fake-selection: hsla(201, 100%, 56%, 0.3);
+
+	--ck-color-tooltip-background: @tooltip-bg;
+
+	// Some manual correction is still needed
+	.ck-button.ck-on {
+		color: #fff;
+	}
+
+	// I deserve to burn in hell
+	.ck-tooltip .ck-tooltip__text {
+		padding: 7px 12px !important;
+		border-radius: @border-radius !important;
+	}
+}

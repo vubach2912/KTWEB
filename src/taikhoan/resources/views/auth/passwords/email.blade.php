@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ config('app.name') }}</title>
-    <link rel="shortcut icon" href="{{ url('/frontend/img/favicon.ico) }}">
+    <link rel="shortcut icon" href="{{ url('/frontend/img/favicon.ico') }}">
     <!-- IMPORTANT!!! remember CSRF token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 

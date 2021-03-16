@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>{{ config('app.name') }}</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-    <link rel="shortcut icon" href="{{ url('/frontend/img/favicon.ico) }}">
+    <link rel="shortcut icon" href="{{ url('/frontend/img/favicon.ico') }}">
 
     <!-- Bootstrap 3.3.7 -->
     <base href="{{asset('')}}">
@@ -58,7 +58,7 @@
                             <!-- Menu Toggle Button -->
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <!-- The user image in the navbar-->
-                                <img src="{{ url('/frontend/img/logo.png) }}"
+                                <img src="{{ url('/frontend/img/logo.png') }}"
                                      class="user-image" alt="User Image"/>
                                 <!-- hidden-xs hides the username on small devices so only the image appears. -->
                                 <span class="hidden-xs">{{ Auth::user()->name }}</span>
@@ -66,7 +66,7 @@
                             <ul class="dropdown-menu">
                                 <!-- The user image in the menu -->
                                 <li class="user-header">
-                                    <img src="{{ url('/frontend/img/logo.png') }}"
+                                    <img src="/taikhoan/frontend/img/logo.png"
                                          class="img-circle" alt="User Image"/>
                                     <p>
                                         {{ Auth::user()->name }}

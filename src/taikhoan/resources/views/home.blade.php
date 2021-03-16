@@ -10,9 +10,9 @@
                         <h3 class="profile-username text-center">{{$username}}</h3>
                         <p class="text-muted text-center">Lữ hành</p>
                         <ul class="list-group list-group-unbordered">
-                            <li class="list-group-item">
-                                <b>Đồng trong tài khoản</b> <a class="btn btn-warning btn-flat btn-xs pull-right"> Đồng</a>
-                            </li>
+{{--                            <li class="list-group-item">--}}
+{{--                                <b>Đồng trong tài khoản</b> <a class="btn btn-warning btn-flat btn-xs pull-right"> Đồng</a>--}}
+{{--                            </li>--}}
                         </ul>
                     </div>
                     <!-- /.box-body -->

@@ -44,7 +44,7 @@
 <div class="register-box">
     <div class="login-logo">
         <a href="{{ url('/home') }}">
-            <img src="/taikhoan/frontend/img/logo.png"/>
+            <img src="{{ url('/frontend/img/logo.png') }}"/>
         </a>
     </div>
 

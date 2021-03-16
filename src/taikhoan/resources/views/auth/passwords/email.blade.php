@@ -45,7 +45,7 @@
 <div class="login-box">
     <div class="login-logo">
         <a href="{{ url('/home') }}">
-            <img src="/frontend/img/logo.png"/>
+            <img src="{{ url('/frontend/img/logo.png') }}"/>
         </a>
     </div>
     <!-- /.login-logo -->

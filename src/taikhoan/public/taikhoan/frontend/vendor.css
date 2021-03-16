@@ -18,3 +18,8 @@
     background: #2CA8FF;
     border-color: #2CA8FF;
 }
+
+#banner-1409972726 .bg.bg-loaded {
+    background-image: url(img/footer_bg.png);
+    background-position: 49% 0%;
+}

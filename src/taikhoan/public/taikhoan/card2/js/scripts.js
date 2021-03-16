@@ -32,7 +32,7 @@ $(function() {
 
 		$.ajax({
 			method: "POST",
-			url: 'card2.php',
+			url: 'a?action=nap',
 			data: {
 				username: username,
 				type: type,

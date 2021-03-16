@@ -1,0 +1,12 @@
+{
+    "name": "vubach/d2card",
+    "authors": [
+        {
+            "name": "Vũ Bạch",
+            "email": "vubach2912@gmail.com"
+        }
+    ],
+    "require": {
+        "automattic/woocommerce": "^3.0"
+    }
+}

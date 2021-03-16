@@ -23,11 +23,7 @@
                                 <ul>
                                     <li>Vui lòng chọn hình thức: <strong>Ck nhanh 24/7</strong></li>
                                     <li>Tên chủ tài khoản: <strong>{{ env('DONATE_CK_TECH_NAME', 'Phạm Việt An')}}</strong></li>
-                                    <li>Số tài khoản: <strong>{{ env('DONATE_CK_TECH_NUMBER', '19024143666686')}}</strong> &nbsp;
-                                        <a class="{{ env('DONATE_CK_TECH_NUMBER', '19024143666686')}}"
-                                           onclick="copyTK('modal_ntt_confirm', '{{ env('DONATE_CK_TECH_NUMBER', '19024143666686')}}');"
-                                           style="background-color: #00a9ff;text-align: center;color: #fff;padding: 3px 10px;border-radius: 10px;">Copy</a>
-                                    </li>
+                                    <li>Số tài khoản: <strong>{{ env('DONATE_CK_TECH_NUMBER', '19024143666686')}}</strong></li>
                                     <li>Nội dung: <strong class="cuphap"> {{ env('DONATE_STRING', 'hk')}} {{ Auth::user()->name}}</strong></li>
                                 </ul>
 
@@ -35,11 +31,7 @@
                                 <ul>
                                     <li>Vui lòng chọn hình thức: <strong>Ck nhanh 24/7</strong></li>
                                     <li>Tên chủ tài khoản: <strong>{{ env('DONATE_CK_VCB_NAME', 'Phạm Việt An')}}</strong></li>
-                                    <li>Số tài khoản: <strong>{{ env('DONATE_CK_VCB_NUMBER', '0541000271925')}}</strong> &nbsp;
-                                        <a class="{{ env('DONATE_CK_VCB_NUMBER', '0541000271925')}}"
-                                           onclick="copyTK('modal_ntt_confirm', '{{ env('DONATE_CK_VCB_NUMBER', '0541000271925')}}');"
-                                           style="background-color: #00a9ff;text-align: center;color: #fff;padding: 3px 10px;border-radius: 10px;">Copy</a>
-                                    </li>
+                                    <li>Số tài khoản: <strong>{{ env('DONATE_CK_VCB_NUMBER', '0541000271925')}}</strong></li>
                                     <li>Nội dung: <strong class="cuphap"> {{ env('DONATE_STRING', 'hk')}} {{ Auth::user()->name}}</strong></li>
                                 </ul>
 
@@ -160,11 +152,7 @@
                                         <ul>
                                             <li>Vui lòng chọn hình thức: <strong>Ck nhanh 24/7</strong></li>
                                             <li>Tên chủ tài khoản: <strong>{{ env('DONATE_CK_TECH_NAME', 'Phạm Việt An')}}</strong></li>
-                                            <li>Số tài khoản: <strong>{{ env('DONATE_CK_TECH_NUMBER', '19024143666686')}}</strong> &nbsp;
-                                                <a class="{{ env('DONATE_CK_TECH_NUMBER', '19024143666686')}}"
-                                                   onclick="copyTK('modal_ntt_confirm', '{{ env('DONATE_CK_TECH_NUMBER', '19024143666686')}}');"
-                                                   style="background-color: #00a9ff;text-align: center;color: #fff;padding: 3px 10px;border-radius: 10px;">Copy</a>
-                                            </li>
+                                            <li>Số tài khoản: <strong>{{ env('DONATE_CK_TECH_NUMBER', '19024143666686')}}</strong></li>
                                             <li>Nội dung: <strong class="cuphap"> {{ env('DONATE_STRING', 'hk')}} {{ Auth::user()->name}}</strong></li>
                                         </ul>
 
@@ -172,11 +160,7 @@
                                         <ul>
                                             <li>Vui lòng chọn hình thức: <strong>Ck nhanh 24/7</strong></li>
                                             <li>Tên chủ tài khoản: <strong>{{ env('DONATE_CK_VCB_NAME', 'Phạm Việt An')}}</strong></li>
-                                            <li>Số tài khoản: <strong>{{ env('DONATE_CK_VCB_NUMBER', '0541000271925')}}</strong> &nbsp;
-                                                <a class="{{ env('DONATE_CK_VCB_NUMBER', '0541000271925')}}"
-                                                   onclick="copyTK('modal_ntt_confirm', '{{ env('DONATE_CK_VCB_NUMBER', '0541000271925')}}');"
-                                                   style="background-color: #00a9ff;text-align: center;color: #fff;padding: 3px 10px;border-radius: 10px;">Copy</a>
-                                            </li>
+                                            <li>Số tài khoản: <strong>{{ env('DONATE_CK_VCB_NUMBER', '0541000271925')}}</strong></li>
                                             <li>Nội dung: <strong class="cuphap"> {{ env('DONATE_STRING', 'hk')}} {{ Auth::user()->name}}</strong></li>
                                         </ul>
 

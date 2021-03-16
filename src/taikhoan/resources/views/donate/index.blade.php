@@ -14,6 +14,9 @@
                 <div class="block-content">
                     <div class="ntt-receive-info">
                         <div class="tab-content ntt-receive-content col-65">
+                            <div id="card" class="tab-pane">
+                                CHƯA HOÀN THIỆN
+                            </div>
                             <div id="bank" class="tab-pane">
 
                                 <div><strong>TECHCOMBANK</strong></div>
@@ -45,7 +48,7 @@
                                 <ul>
                                     <li>Tài khoản: <strong>{{ env('MOMO_NUMBER', '0378435791')}} ({{ env('MOMO_NAME', 'Đỗ Hằng Nga')}})
                                         </strong> &nbsp; <a class="{{ env('MOMO_NUMBER', '0378435791')}}"
-                                            onclick="copyTK('ntt-receive-info-header-pc', '0964918575');"
+                                            onclick="copyTK('ntt-receive-info-header-pc', '{{ env('MOMO_NUMBER', '0378435791')}}');"
                                             style="background-color: #00a9ff;text-align: center;color: #fff;padding: 3px 10px;border-radius: 10px;">Copy</a>
                                     </li>
                                     <li>Số tiền: (số tiền mà bạn muốn donate)</li>
@@ -57,7 +60,17 @@
                         <ul class="nav nav-pills flex-column ntt-receive-tabs col-35" role="tablist">
                             <li class="nav-item active" onclick="openBank(event, 'momo')">
                                 <a aria-controls="momo" role="tab" data-toggle="tab" aria-expanded="true">
-                                    <img src="taikhoan/frontend/img/momo.png" class="img-responsive"> <span>Momo</span>
+                                    <img src="/taikhoan/frontend/img/momo.png" class="img-responsive"> <span>Momo</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" onclick="openBank(event, 'bank')">
+                                <a href="#bank" aria-controls="bank" role="tab" data-toggle="tab">
+                                    <img src="/taikhoan/frontend/img/popup_bank.png" class="img-responsive"> <span>Ngân hàng</span>
+                                </a>
+                            </li>
+                            <li class="nav-item" onclick="openBank(event, 'card')">
+                                <a href="#card" aria-controls="bank" role="tab" data-toggle="tab">
+                                    <span>Thẻ cào</span>
                                 </a>
                             </li>
                         </ul>
@@ -120,19 +133,27 @@
 
                             <div class="popup-transfer">
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="nav-item active" onclick="openBank(event, 'bank_mob')">
+                                    <li role="presentation" class="nav-item" onclick="openBank(event, 'bank_mob')">
                                         <a href="#bank_mob" aria-controls="bank" role="tab" data-toggle="tab">
-                                            <img src="taikhoan/frontend/img/popup_bank.png" class="img-responsive"> <span>Ngân hàng</span>
+                                            <img src="/taikhoan/frontend/img/popup_bank.png" class="img-responsive"> <span>Ngân hàng</span>
                                         </a>
                                     </li>
                                     <li role="presentation" class="nav-item active" onclick="openBank(event, 'momo_mob')">
                                         <a href="#momo_mob" aria-controls="momo" role="tab" data-toggle="tab">
-                                            <img src="taikhoan/frontend/img/momo.png" class="img-responsive"> <span>Momo</span>
+                                            <img src="/taikhoan/frontend/img/momo.png" class="img-responsive"> <span>Momo</span>
+                                        </a>
+                                    </li>
+                                    <li role="presentation" class="nav-item" onclick="openBank(event, 'card_mob')">
+                                        <a href="#card_mob" aria-controls="card" role="tab" data-toggle="tab">
+                                            <span>Thẻ Cào</span>
                                         </a>
                                     </li>
                                 </ul>
 
                                 <div class="tab-content">
+                                    <div id="card_mob" class="tab-pane">
+                                        CHƯA HOÀN THIỆN
+                                    </div>
                                     <div id="bank_mob" class="tab-pane">
 
                                         <div><strong>TECHCOMBANK</strong></div>
@@ -163,7 +184,8 @@
                                     <div id="momo_mob" class="tab-pane active">
                                         <ul>
                                             <li>Tài khoản: <strong>{{ env('MOMO_NUMBER', '0378435791')}} ({{ env('MOMO_NAME', 'Đỗ Hằng Nga')}})</strong> &nbsp; <a
-                                                    class="{{ env('MOMO_NUMBER', '0378435791')}}" onclick="copyTK('modal_ntt_confirm', '{{ env('MOMO_NUMBER', '0378435791')}}');"
+                                                    class="{{ env('MOMO_NUMBER', '0378435791')}}"
+                                                    onclick="copyTK('modal_ntt_confirm', '{{ env('MOMO_NUMBER', '0378435791')}}');"
                                                     style="background-color: #00a9ff;text-align: center;color: #fff;padding: 3px 10px;border-radius: 10px;">Copy</a>
                                             </li>
                                             <li>Nội dung: <strong class="cuphap">{{ env('DONATE_STRING', 'hk')}} {{ Auth::user()->name}}</strong></li>

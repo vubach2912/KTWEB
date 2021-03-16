@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ config('app.name') }} | Registration Page</title>
-    <link rel="shortcut icon" href="/frontend/img/favicon.ico">
+    <title>{{ config('app.name') }} | Đăng ký tài khoản game</title>
+    <link rel="shortcut icon" href="{{ url('/frontend/img/favicon.ico) }}">
     <!-- IMPORTANT!!! remember CSRF token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -44,7 +44,7 @@
 <div class="register-box">
     <div class="login-logo">
         <a href="{{ url('/home') }}">
-            <img src="/frontend/img/logo.png"/>
+            <img src="{{ url('/frontend/img/logo.png') }}"/>
         </a>
     </div>
 

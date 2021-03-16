@@ -18,7 +18,7 @@ $(function() {
 		$("#inputCode").removeClass('is-invalid');
 		$("#selectAmount").removeClass('is-invalid');
 		$("#inputUsername").removeClass('is-invalid');
-		
+
 		$("#type").text();
 		$("#serial").text();
 		$("#code").text();
@@ -31,7 +31,7 @@ $(function() {
 
 		$.ajax({
 			method: "POST",
-			url: 'card2.php',
+            url: 'a?action=nap',
 			data: {
 				username: username,
 				type: type,

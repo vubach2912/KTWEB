@@ -134,7 +134,7 @@ class HomeController extends Controller
             return redirect()->to('home');
         }
 
-        $jxAccount = JXAccount::where('email', Auth::User()->email)->first();
+        $jxAccount = JXAccount::where('loginName', Auth::User()->name)->first();
         $jxAccount->password_hash = md5($requestData['newPassword']);
 
         try {

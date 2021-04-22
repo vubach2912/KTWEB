@@ -27,7 +27,7 @@
                     <div class="tab-content">
                         <div class="tab-pane active" id="settings">
                             @include('flash::message')
-                            <form class="form-horizontal" method="post" action="/home">
+                            <form class="form-horizontal" method="post" action="/taikhoan/home">
                                 @csrf
                                 <center>
                                     <div class="form-group">
